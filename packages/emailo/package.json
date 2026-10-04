@@ -24,8 +24,8 @@
   "scripts": {
     "lint": "eslint src/",
     "check": "tsc --build",
-    "build": "NODE_ENV=production vite build && tsc --build tsconfig.esm.json && tsc --build tsconfig.cjs.json",
-    "dev": "vite"
+    "build": "node init && NODE_ENV=production vite build && tsc --build tsconfig.esm.json && tsc --build tsconfig.cjs.json",
+    "dev": "node init && vite"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.1",

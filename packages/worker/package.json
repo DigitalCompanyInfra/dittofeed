@@ -3,11 +3,11 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production tsc --build",
-    "dev": "NODE_ENV=development ts-node scripts/startWorker.ts",
+    "build": "node init && NODE_ENV=production tsc --build",
+    "dev": "node init && NODE_ENV=development ts-node scripts/startWorker.ts",
     "check": "tsc --build",
     "lint": "eslint .",
-    "start": "nodemon scripts/startWorker.ts"
+    "start": "node init && nodemon scripts/startWorker.ts"
   },
   "exports": {
     "./*": "./dist/*.js"

@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development dotenv -e ../../.env -- next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && NODE_ENV=development dotenv -e ../../.env -- next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "check": "tsc --build",
-    "build-ts": "NODE_ENV=production tsc --build",
+    "build-ts": "node init && NODE_ENV=production tsc --build",
     "copy-css": "copyfiles -u 0 \"src/**/*.css\" dist",
     "lint": "next lint"
   },

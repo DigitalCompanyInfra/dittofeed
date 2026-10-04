@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "cli": "ts-node ./scripts/cli.ts",
-    "build": "NODE_ENV=production tsc --build",
+    "build": "node init && NODE_ENV=production tsc --build",
     "check": "tsc --build",
     "lint": "eslint src/ scripts/"
   },

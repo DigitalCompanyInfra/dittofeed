@@ -3,8 +3,8 @@
   "version": "0.0.3",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production tsc --build",
-    "dev": "NODE_ENV=development tsx scripts/startLite.ts",
+    "build": "node init && NODE_ENV=production tsc --build",
+    "dev": "node init && NODE_ENV=development tsx scripts/startLite.ts",
     "check": "tsc --build",
     "lint": "eslint ."
   },
